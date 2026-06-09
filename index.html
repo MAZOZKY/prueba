@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SmartCafetería</title>
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1>☕ SmartCafetería</h1>
+    <p>Pide tu comida sin hacer filas</p>
+    <button onclick="logout()" class="logout">Cerrar sesión</button>
+</header>
+
+<section class="hero">
+    <h2>La cafetería universitaria del futuro</h2>
+    <p>
+        Realiza pedidos, paga digitalmente y recoge con PIN.
+    </p>
+    <a href="#menu" class="btn">Realizar Pedido</a>
+</section>
+
+<section class="menu" id="menu">
+    <h2>Menú</h2>
+
+    <div class="products">
+        <div class="product">
+            <h3>Hamburguesa</h3>
+            <p>$12.000</p>
+            <button onclick="generarPIN('Hamburguesa')">Pedir</button>
+        </div>
+
+        <div class="product">
+            <h3>Sándwich</h3>
+            <p>$8.000</p>
+            <button onclick="generarPIN('Sándwich')">Pedir</button>
+        </div>
+
+        <div class="product">
+            <h3>Jugo Natural</h3>
+            <p>$5.000</p>
+            <button onclick="generarPIN('Jugo Natural')">Pedir</button>
+        </div>
+
+        <div class="product">
+            <h3>Café</h3>
+            <p>$3.000</p>
+            <button onclick="generarPIN('Café')">Pedir</button>
+        </div>
+    </div>
+</section>
+
+<section class="order">
+    <div class="pin-box">
+        <h2>Tu Pedido</h2>
+
+        <ul id="listaPedidos"></ul>
+
+        <p id="mensaje"></p>
+
+        <div class="pin" id="pin">----</div>
+    </div>
+</section>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

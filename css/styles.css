@@ -1,0 +1,219 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* BODY */
+body{
+    background: linear-gradient(135deg, #eef2f7, #dfe7f2);
+    color:#333;
+}
+
+/* HEADER */
+header{
+    background:#0d6efd;
+    color:white;
+    padding:20px;
+    text-align:center;
+    position:relative;
+}
+
+header h1{
+    font-size:2rem;
+}
+
+/* BOTÓN LOGOUT */
+.logout{
+    position:absolute;
+    right:20px;
+    top:20px;
+    background:#dc3545;
+    color:white;
+    border:none;
+    padding:8px 12px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.logout:hover{
+    background:#bb2d3b;
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h2{
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+.hero p{
+    max-width:600px;
+    margin:auto;
+}
+
+/* BOTONES */
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#0d6efd;
+    color:white;
+    padding:10px 20px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#0b5ed7;
+}
+
+/* MENU */
+.menu{
+    padding:50px 20px;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.product{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 6px 15px rgba(0,0,0,0.1);
+    transition:transform 0.2s;
+}
+
+.product:hover{
+    transform:translateY(-5px);
+}
+
+.product h3{
+    color:#0d6efd;
+}
+
+.product button{
+    margin-top:10px;
+    background:#198754;
+    color:white;
+    border:none;
+    padding:10px;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.product button:hover{
+    background:#157347;
+}
+
+/* PEDIDO */
+.order{
+    padding:40px 20px;
+    text-align:center;
+}
+
+.pin-box{
+    background:white;
+    max-width:400px;
+    margin:auto;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.1);
+}
+
+.pin{
+    font-size:2.2rem;
+    color:#198754;
+    margin-top:15px;
+    font-weight:bold;
+    letter-spacing:3px;
+}
+
+/* LISTA PEDIDOS */
+#listaPedidos{
+    margin-top:15px;
+    list-style:none;
+}
+
+#listaPedidos li{
+    background:#f1f3f5;
+    margin:5px 0;
+    padding:8px;
+    border-radius:6px;
+}
+
+/* LOGIN Y REGISTRO */
+.login-box{
+    max-width:320px;
+    margin:100px auto;
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.1);
+}
+
+.login-box h2{
+    color:#0d6efd;
+    margin-bottom:10px;
+}
+
+.login-box input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border:none;
+    border-radius:6px;
+    background:#f1f1f1;
+}
+
+.login-box button{
+    width:100%;
+    background:#0d6efd;
+    color:white;
+    border:none;
+    padding:10px;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.login-box button:hover{
+    background:#0b5ed7;
+}
+
+.login-box a{
+    color:#0d6efd;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.login-box a:hover{
+    text-decoration:underline;
+}
+
+/* MENSAJES */
+#mensaje{
+    margin-top:10px;
+    font-weight:bold;
+    color:#198754;
+}
+
+#error{
+    margin-top:10px;
+    color:#dc3545;
+    font-weight:bold;
+}
